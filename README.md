@@ -1,4 +1,8 @@
-<h4>Live :-></h4> https://chat-app-9xwq.onrender.com
+<h4>Live :-></h4> 
+
+https://chat-app-9xwq.onrender.com
+
+<br/>
 
 The Chat App is a real-time messaging platform designed for seamless communication between users. Whether you're sending direct messages or participating in group chats, it ensures an intuitive and secure experience. With features like text formatting, media sharing (images, videos, files), typing indicators, message status updates, and in-app notifications, the app is built to make chatting efficient and interactive.
 
