@@ -31,6 +31,12 @@ Cross-platform compatibility for desktop and mobile.
 Focus on security, privacy, and user-friendly design.
 
 
+![Screenshot 2025-01-07 170302](https://github.com/user-attachments/assets/a2b8ad80-2601-4dbf-9fed-14470c84bdd8)
 
-![Screenshot 2025-01-07 132145](https://github.com/user-attachments/assets/33f9ae54-a90f-42cd-8cf4-6ac960a9f778)
+![Screenshot 2025-01-07 170250](https://github.com/user-attachments/assets/b0a7e34c-df01-481b-99e2-8b9df22e5b07)
+
+![Screenshot 2025-01-07 170218](https://github.com/user-attachments/assets/772dea57-2ce6-4eca-94bb-dd3cc4d239f3)
+
+![Screenshot 2025-01-07 170227](https://github.com/user-attachments/assets/984f412a-5cbd-4024-87b4-83fc04b9f2fe)
+
 
