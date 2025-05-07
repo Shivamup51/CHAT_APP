@@ -93,28 +93,9 @@ A real-time chat application with user authentication, message history, and real
 - Frontend: Deployed on Vercel
 - Database: MongoDB Atlas
 
-## Project Structure
-chat-app/
-├── backend/
-│ ├── src/
-│ │ ├── controllers/
-│ │ ├── lib/
-│ │ ├── middleware/
-│ │ ├── models/
-│ │ └── routes/
-│ ├── index.js
-│ └── package.json
-└── frontend/
-├── public/
-├── src/
-│ ├── components/
-│ ├── contexts/
-│ ├── pages/
-│ ├── store/
-│ └── utils/
-├── index.html
-└── package.json
-```
+##Testing : 
+- email: om@gmail.com
+- password: om123456
 
 ## License
 
