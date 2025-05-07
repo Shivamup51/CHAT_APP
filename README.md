@@ -93,7 +93,7 @@ A real-time chat application with user authentication, message history, and real
 - Frontend: Deployed on Vercel
 - Database: MongoDB Atlas
 
-##Testing : 
+## Testing : 
 - email: om@gmail.com
 - password: om123456
 
