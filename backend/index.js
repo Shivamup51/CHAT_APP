@@ -26,6 +26,14 @@ app.use(
 );
 
 
+app.get("/", (req, res) => {
+  res.status(200).send("API is running successfully!");
+});
+
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
