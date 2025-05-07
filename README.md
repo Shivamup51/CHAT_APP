@@ -1,5 +1,5 @@
 # Chat Application
-# LInk : https://chat-app-frontend-mocha-delta.vercel.app
+## Link : https://chat-app-frontend-mocha-delta.vercel.app
 A real-time chat application with user authentication, message history, and real-time communication capabilities.
 
 ## Features
