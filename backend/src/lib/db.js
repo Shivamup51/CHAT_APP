@@ -3,36 +3,26 @@ import mongoose from "mongoose";
 // Global connection promise that can be awaited
 let dbConnectionPromise = null;
 
+let cachedConnection = null;
+
 export const connectDB = async () => {
-  // Return existing connection promise if it exists
-  if (dbConnectionPromise) {
-    return dbConnectionPromise;
+  if (cachedConnection) {
+    return cachedConnection;
   }
 
-  // Create new connection promise with optimized connection options
-  dbConnectionPromise = mongoose.connect(process.env.MONGODB_URI, {
-    serverSelectionTimeoutMS: 30000,
-    socketTimeoutMS: 45000,
-    maxPoolSize: 10,
-  });
-
   try {
-    const conn = await dbConnectionPromise;
-
-    // Set up connection event listeners
-    mongoose.connection.on('error', err => {
-      console.error('MongoDB connection error:', err);
-      dbConnectionPromise = null; // Reset on error
+    const conn = await mongoose.connect(process.env.MONGODB_URI, {
+      serverSelectionTimeoutMS: 5000,
+      socketTimeoutMS: 10000,
+      maxPoolSize: 1,
+      retryWrites: true,
+      w: 'majority'
     });
 
-    mongoose.connection.on('disconnected', () => {
-      dbConnectionPromise = null; // Reset on disconnect
-    });
-
-    console.log(`MongoDB connected`);
+    cachedConnection = conn;
     return conn;
   } catch (error) {
     console.error(`Error: ${error.message}`);
-    process.exit(1);
+    throw error;
   }
 };
